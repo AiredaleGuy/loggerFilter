@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "MacOS">
+      <FileRef
+         location = "group:fw/macos/MGLogger/MGLogger.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:macLog/macLog.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "iOS">
+      <FileRef
+         location = "group:fw/ios/MGLogger/MGLogger.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:iosLog/iosLog.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+</Workspace>
