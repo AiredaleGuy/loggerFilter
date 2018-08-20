@@ -82,7 +82,6 @@ static BOOL searchStringsDifferent(NSString * s1, NSString * s2) {
 	return ranges;
 }
 
-//
 - (NSMutableAttributedString *) highlightSubstrings:(NSString *)substring inLine:(NSMutableAttributedString *)line {
 	NSArray * ranges = [self rangesOf:substring inString:line.string];
 	for (NSString * range in ranges) {
@@ -95,8 +94,6 @@ static BOOL searchStringsDifferent(NSString * s1, NSString * s2) {
 	return line;
 }
 
-//	TODO: use the predicate everywhere or don't use it at all -- we use it only to figure if we have
-//	  hits (could use: 1) predicate with block
 - (NSMutableAttributedString *) applyLineSearch:(NSMutableAttributedString *)line {
 	if (line != nil && line.length > 0  && _searchPredicate) {
 		if ([_searchPredicate.predicate evaluateWithObject:line.string]) {
